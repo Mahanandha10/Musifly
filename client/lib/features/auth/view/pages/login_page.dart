@@ -2,14 +2,14 @@ import 'package:client/features/auth/view/widgets/auth_gradient_button.dart';
 import 'package:client/features/auth/view/widgets/custom_field.dart';
 import 'package:flutter/material.dart';
 
-class SignupPage extends StatefulWidget {
-  const SignupPage({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<SignupPage> createState() => _SignupPageState();
+  State<LoginPage> createState() => _LoginPage();
 }
 
-class _SignupPageState extends State<SignupPage> {
+class _LoginPage extends State<LoginPage> {
   final usernameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -46,42 +46,39 @@ class _SignupPageState extends State<SignupPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Sign Up',
+                'Login In',
                 style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 30),
-              CustomField(
-                hintText: 'Username',
-                controller: usernameController,
+                CustomField(
+                hintText: 'Email',
+                controller: emailController,
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 20),
               CustomField(
                 hintText: 'Password',
                 controller: passwordController,
                 isObscureText: true,
               ),
               const SizedBox(height: 15),
-              CustomField(
-                hintText: 'Email',
-                controller: emailController,
-              ),
-              const SizedBox(height: 20),
-              AuthGradientButton(
-                buttonText: 'Sign up',
+            
+             AuthGradientButton(
+                buttonText: 'Log In',
                 onTap: () {},
+                
               ),
               const SizedBox(height: 20),
               RichText(
                 text: const TextSpan(
-                  text: 'Already have an account? ',
+                  text: 'Don\'t have an account? ',
                   style: TextStyle(
                       color: Colors.white), // Set the default color to white
                   children: [
                     TextSpan(
-                      text: 'Sign In',
+                      text: 'Sign Up',
                       style: TextStyle(
                         color: Colors
                             .blue, // Optional: Set a different color for "Sign In"
