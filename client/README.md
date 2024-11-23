@@ -1,6 +1,6 @@
 # client
 
-A new Flutter project.
+A new Flutter project for Music app.
 
 ## Getting Started
 

@@ -70,7 +70,7 @@ class _LoginPage extends State<LoginPage> {
                 onTap: () {},
                 
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               RichText(
                 text: const TextSpan(
                   text: 'Don\'t have an account? ',
@@ -92,6 +92,7 @@ class _LoginPage extends State<LoginPage> {
           ),
         ),
       ),
+       resizeToAvoidBottomInset: true,
     );
   }
 }

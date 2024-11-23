@@ -95,6 +95,7 @@ class _SignupPageState extends State<SignupPage> {
           ),
         ),
       ),
+       resizeToAvoidBottomInset: true,
     );
   }
 }
