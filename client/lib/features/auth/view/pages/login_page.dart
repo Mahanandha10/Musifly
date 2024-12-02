@@ -1,4 +1,6 @@
+import 'package:client/features/auth/view/pages/signup_page.dart';
 import 'package:client/features/auth/view/widgets/auth_gradient_button.dart';
+import 'package:client/features/auth/repositories/auth_remote_repositories.dart';
 import 'package:client/features/auth/view/widgets/custom_field.dart';
 import 'package:flutter/material.dart';
 
@@ -67,25 +69,38 @@ class _LoginPage extends State<LoginPage> {
             
              AuthGradientButton(
                 buttonText: 'Log In',
-                onTap: () {},
+                onTap: () async{
+                 await AuthRemoteRepositories().login(
+                  email: emailController.text, 
+                  password: passwordController.text,
+                 );
+              
+                },
                 
               ),
               const SizedBox(height: 15),
-              RichText(
-                text: const TextSpan(
-                  text: 'Don\'t have an account? ',
-                  style: TextStyle(
-                      color: Colors.white), // Set the default color to white
-                  children: [
-                    TextSpan(
-                      text: 'Sign Up',
-                      style: TextStyle(
-                        color: Colors
-                            .blue, // Optional: Set a different color for "Sign In"
-                        fontWeight: FontWeight.bold, // Optional: Make it bold
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context,MaterialPageRoute(builder:(context) => const SignupPage(),
+                  ),
+                  );
+                },
+                child: RichText(
+                  text: const TextSpan(
+                    text: 'Don\'t have an account? ',
+                    style: TextStyle(
+                        color: Colors.white), // Set the default color to white
+                    children: [
+                      TextSpan(
+                        text: 'Sign Up',
+                        style: TextStyle(
+                          color: Colors
+                              .blue, // Optional: Set a different color for "Sign In"
+                          fontWeight: FontWeight.bold, // Optional: Make it bold
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
