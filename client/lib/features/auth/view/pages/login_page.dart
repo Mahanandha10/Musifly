@@ -66,13 +66,14 @@ class _LoginPage extends ConsumerState<LoginPage> {
         body: isLoading
             ? const Loader()
             : Padding(
-                padding: const EdgeInsets.all(14.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Form(
                   key: formKey,
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        const SizedBox(height: 180),
                         const Text(
                           'Login In',
                           style: TextStyle(

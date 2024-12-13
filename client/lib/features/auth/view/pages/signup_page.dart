@@ -54,7 +54,7 @@ class _SignupPageState extends ConsumerState<SignupPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(20.0),
           child: Text(
             'Musifly',
             style: TextStyle(
@@ -67,13 +67,14 @@ class _SignupPageState extends ConsumerState<SignupPage> {
       body: isLoading
           ? const Loader()
           : Padding(
-              padding: const EdgeInsets.all(14.0),
+              padding: const EdgeInsets.all(20.0),
               child: Form(
                 key: formKey,
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      const SizedBox(height: 150),
                       const Text(
                         'Sign Up',
                         style: TextStyle(
