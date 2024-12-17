@@ -23,8 +23,11 @@ if (flutterVersionName == null) {
 }
 configurations.all {
     resolutionStrategy {
-        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.20'
-        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20'
+        eachDependency{
+            if((requested.group == "org.jetbrains.kotlin")&&(requested.name.startsWith("kotlin-stdlib"))){
+                useVersion("1.6.0")
+            }
+    }
     }
 }
 
