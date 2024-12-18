@@ -29,7 +29,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       title: 'Musifly',
       theme: Apptheme.darkThemeMode,
-      //home: currentUser == null ? const UploadSongPage():const LoginPage(),
+      //home: currentUser == null ? const LoginPage():const UploadSongPage(),
       home:const UploadSongPage(),
       debugShowCheckedModeBanner: false,
     );
