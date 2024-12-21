@@ -9,6 +9,6 @@ class HomePage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final user =ref.watch(currentUserNotifierProvider);
     print(user);
-    return Scaffold();
+    return const Scaffold();
   }
 }
