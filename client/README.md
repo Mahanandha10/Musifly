@@ -1,16 +1,25 @@
+# Musifly
+
 # client
 
-A new Flutter project for Music app.
+A new Flutter project for Music app By MJ @2024.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Run Command
+    First setup project:
+# server side
+        Install postgresql database for storing an user information.
+        Activate python Virtual Environment:  ./venv/Scripts/activate
+        try to run server: fastapi run main.py
 
-A few resources to get you started if this is your first Flutter project:
+    Second setup:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+        adb reverse tcp:8000 tcp:8000
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    Make sure that server is running on  Serving at: http://0.0.0.0:8000 or something like
+
+    Then Flutter run command to start app.
+
+# Cloudinary like Additional requirement
+
