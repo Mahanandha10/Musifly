@@ -1,14 +1,17 @@
-# Musifly
+# Musifly Music Player App
 
 # client
 
-A new Flutter project for Music app By MJ @2024.
+A new project for Music app By MJ @2024.
 
 ## Getting Started
 
-Run Command
-    First setup project:
+Run Command for setup project:
+
 # server side
+    First Setup:
+
+        Install python
         Install postgresql database for storing an user information.
         Activate python Virtual Environment:  ./venv/Scripts/activate
         try to run server: fastapi run main.py
@@ -21,5 +24,7 @@ Run Command
 
     Then Flutter run command to start app.
 
-# Cloudinary like Additional requirement
+# Additional requirement
 
+            Cloudinary
+            FastAPI for backend server
