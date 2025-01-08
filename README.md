@@ -26,6 +26,7 @@ Run Command for setup project:
 
 # Additional requirement
 
+            install python
             install Cloudinary
             FastAPI for backend server
             install postgresql
