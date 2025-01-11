@@ -1,4 +1,4 @@
-# Musifly Music Player App
+# Musifly -Music Player App
 
 # client
 
