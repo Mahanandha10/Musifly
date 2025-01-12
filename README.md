@@ -1,6 +1,6 @@
-# Musifly -Music Player App
+# Musifly - A Music Player App
 
-# client
+# client for UI Interface
 
 A new project for Music app By MJ @2024.
 
@@ -26,7 +26,5 @@ Run Command for setup project:
 
 # Additional requirement
 
-            install python
-            install Cloudinary
+            Cloudinary
             FastAPI for backend server
-            install postgresql
