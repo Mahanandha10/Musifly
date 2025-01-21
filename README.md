@@ -26,6 +26,5 @@ Run Command for setup project:
 
 # Additional requirement
 
-            install python
             Cloudinary
             FastAPI for backend server
