@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -11,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Navigate to the main screen after a delay
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/main'); // Replace '/home' with your main route
     });
   }
@@ -28,8 +30,8 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/logo.png',
               width: 200, // Adjust the width as needed
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Musifly', // Replace with your app name or tagline
               style: TextStyle(
                 fontSize: 24,
