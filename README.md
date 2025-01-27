@@ -24,7 +24,7 @@ Run Command for setup project:
 
     Then Flutter run command to start app.
 
-# Additional requirement
+# Additional requirements
 
             Cloudinary
             FastAPI for backend server
